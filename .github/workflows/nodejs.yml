@@ -55,7 +55,7 @@ jobs:
          uses: aws-actions/amazon-ecs-deploy-task-definition@v1
          with:
             task-definition: ${{ steps.task-def.outputs.task-definition }}
-            service: cutshort-dev
+            service: nodejs
             cluster: cutshort
             wait-for-service-stability: true
      
